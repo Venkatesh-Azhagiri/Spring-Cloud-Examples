@@ -9,7 +9,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 public class SpringCloudEg1Application {
 
 	public static void main(String[] args) {
-		System.out.println("test*****");
+		//Example
+		//localhost:8888/config-service/dev
+		System.out.println("use the property file name as context followed by env*****");
 		SpringApplication.run(SpringCloudEg1Application.class, args);
 	}
 
