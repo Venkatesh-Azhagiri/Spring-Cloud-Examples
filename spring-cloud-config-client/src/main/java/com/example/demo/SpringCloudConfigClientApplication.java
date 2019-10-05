@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringCloudConfigClientApplication {
 
 	public static void main(String[] args) {
+		//http://localhost:7777/prop
 		SpringApplication.run(SpringCloudConfigClientApplication.class, args);
 	}
 
