@@ -54,5 +54,14 @@ public class CurrencyExchange {
 	public void setPort(Integer port) {
 		this.port = port;
 	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
 	
 }
