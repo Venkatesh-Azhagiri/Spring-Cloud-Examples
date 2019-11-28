@@ -21,7 +21,7 @@ public class CurrencyConversionController {
 	private CurrencyExchangeProxy currencyExchangeProxy;
 	
 
-	
+	//Normal REST Call
 	@GetMapping("currency-conversion/from/{from}/to/{to}/quantity/{quantity}")
 	public CurrencyConversionDTO getCurrencyConversion(
 			@PathVariable String from, @PathVariable String to,
@@ -40,6 +40,8 @@ public class CurrencyConversionController {
 				response.getPort());			
 	}
 	
+	//http://localhost:8100/currency-conversion-feign/from/usd/to/inr/quantity/2
+	//Feign call
 	@GetMapping("currency-conversion-feign/from/{from}/to/{to}/quantity/{quantity}")
 	public CurrencyConversionDTO getCurrencyFeignConversion(
 			@PathVariable String from, @PathVariable String to,
