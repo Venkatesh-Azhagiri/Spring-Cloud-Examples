@@ -17,8 +17,8 @@ public class CurrencyExchangeController {
 	private Environment environment;
 	@Autowired
 	private ExchangeCurrencyRepository exchangeCurrencyRepository;
-	
-	
+	//Zuul
+	//http://localhost:8765/currency-exchange-service/currency-exchange/from/usd/to/inr
 	//http://localhost:8000/currency-exchange/from/usd/to/inr
 	//http://localhost:8000/h2-console/
 	//jdbc:h2:mem:testdb

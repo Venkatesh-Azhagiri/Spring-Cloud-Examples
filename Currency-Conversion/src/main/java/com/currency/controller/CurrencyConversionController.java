@@ -40,6 +40,8 @@ public class CurrencyConversionController {
 				response.getPort());			
 	}
 	
+	//Zuul
+	//http://localhost:8765/conversion-service/currency-conversion-feign/from/usd/to/inr/quantity/2
 	//http://localhost:8100/currency-conversion-feign/from/usd/to/inr/quantity/2
 	//Feign call
 	@GetMapping("currency-conversion-feign/from/{from}/to/{to}/quantity/{quantity}")
