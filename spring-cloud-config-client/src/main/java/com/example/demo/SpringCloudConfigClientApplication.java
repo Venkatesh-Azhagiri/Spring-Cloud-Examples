@@ -13,6 +13,10 @@ public class SpringCloudConfigClientApplication {
 
 	public static void main(String[] args) {
 		//http://localhost:7777/prop
+		//will refresh only one instance
+		//POST: http://localhost:7777/actuator/refresh
+		//Will refresh all instance
+		//POST: http://localhost:7777/actuator/bus-refresh
 		SpringApplication.run(SpringCloudConfigClientApplication.class, args);
 	}
 
