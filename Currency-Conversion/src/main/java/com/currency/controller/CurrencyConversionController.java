@@ -42,7 +42,13 @@ public class CurrencyConversionController {
 				quantity.multiply(response.getConversionValue()) ,
 				response.getPort());			
 	}
-	
+	//Zipkin to trace the request by sleuth
+	//http://localhost:9411/
+	//RabbitMQ
+	//http://localhost:15672/
+	//SET RABBIT_URI=amqp://localhost
+	// java -jar zipkin-server-2.19.2-exec.jar
+	//rabbitmq-plugins enable rabbitmq_management
 	//Zuul
 	//http://localhost:8765/conversion-service/currency-conversion-feign/from/usd/to/inr/quantity/2
 	//http://localhost:8100/currency-conversion-feign/from/usd/to/inr/quantity/2
